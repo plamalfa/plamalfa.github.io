@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #5da8dd;
+  color: #f7f3e3;
+}
+
+h1,
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  color: #393e41;
+  font-family: "Open Sans", sans-serif;
+}
+
+i {
+  font-size: 25px;
+}
+
+.btn {
+  background-color: #9b2d2d;
+  border-color: #9b2d2d;
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn:hover {
+  background-color: #631c1c;
+  border-color: #631c1c;
+}
+
+.navbar-brand {
+  color: #f7f3e3 !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fa-home {
+  color: #f7f3e3;
+}
