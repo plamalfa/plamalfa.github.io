@@ -8,9 +8,11 @@ body {
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 80px;
   font-family: "Ubuntu", sans-serif;
   color: #f7f3e3;
+  margin-left: 25px;
+  margin-bottom: 2em;
 }
 
 a {
@@ -18,10 +20,31 @@ a {
   font-family: "Open Sans", sans-serif;
 }
 
-a:focus,
 a:hover {
   text-decoration: none;
   color: #f7f3e3;
+}
+
+.cool-link {
+  display: inline-block;
+  color: #f7f3e3;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f7f3e3;
+  transition: width 0.3s;
+  text-decoration: none;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  text-decoration: none;
+  //transition: width .3s;
 }
 
 i {
@@ -30,8 +53,8 @@ i {
 
 .text {
   color: #393e41;
-  margin-top: 40px;
   font-family: "Open Sans", sans-serif;
+  margin-top: -200px;
 }
 
 .fa-home {
@@ -43,8 +66,18 @@ i {
   font-family: "Open Sans", sans-serif;
 }
 
+.logo {
+  height: 500px;
+  width: 500px;
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     margin-left: 0.8em;
+  }
+  .text {
+    margin-top: -125px;
   }
 }
