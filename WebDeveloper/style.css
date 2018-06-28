@@ -20,6 +20,16 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  color: #f7f3e3;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f7f3e3;
+}
+
 i {
   font-size: 25px;
 }
@@ -67,6 +77,10 @@ span {
   margin: 5px;
 }
 
+.description {
+  display: none;
+}
+
 #about {
   background-color: #f7f3e3;
 }
@@ -75,10 +89,30 @@ span {
   margin-bottom: 20%;
 }
 
+@media screen and (max-width: 990px) {
+  .description {
+    display: inline;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width: 775px) {
+  .icon-row {
+    margin-left: 0.5em;
+  }
   .row-2 {
     position: relative;
     top: 10px;
+  }
+  .description {
+    display: inline;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
   }
 }
 
@@ -86,5 +120,12 @@ span {
   .row-2 {
     position: relative;
     left: 55px;
+  }
+  .description {
+    display: inline;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
   }
 }
