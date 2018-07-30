@@ -1,29 +1,35 @@
-html {
-  height: 100%;
-  overflow: hidden;
+.page-1 {
+  height: 100vh;
+}
+
+.page-2 {
+  height: 65vh;
+  background-color: #fff9f2;
 }
 
 body {
-  height: 90%;
   background-color: #5da8dd;
   color: #f7f3e3;
-  overflow: scroll;
 }
 
-h1 {
+i {
+  font-size: 25px;
+}
+
+.colored {
+  font-size: 75px;
+}
+
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.name {
   font-size: 80px;
   font-family: "Ubuntu", sans-serif;
-  color: #f7f3e3;
-}
-
-a {
-  color: #f7f3e3;
-  font-family: "Open Sans", sans-serif;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #f7f3e3;
+  color: #fff9f2;
 }
 
 .container {
@@ -34,36 +40,15 @@ a:hover {
   justify-content: center;
 }
 
-.cool-link {
-  display: inline-block;
-  color: #f7f3e3;
-  text-decoration: none;
-}
-
-.cool-link::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #f7f3e3;
-  transition: width 0.3s;
-  text-decoration: none;
-}
-
-.cool-link:hover::after {
-  width: 100%;
-  text-decoration: none;
-  //transition: width .3s;
-}
-
-i {
-  font-size: 25px;
+.title {
+  margin-top: -50px;
 }
 
 .text {
   color: #393e41;
   font-family: "Open Sans", sans-serif;
-  margin: 30px;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 .fa-home {
@@ -77,48 +62,50 @@ i {
 
 .logo {
   height: 500px;
-  width: 500px;
-  margin: -50px;
+  width: 800px;
+  margin-top: -40px;
 }
 
 .description {
   display: none;
 }
 
-@media screen and (max-width: 990px) {
-  .description {
-    display: inline;
-    margin-left: 2em;
-    margin-bottom: 1em;
-    font-family: "Ubuntu", sans-serif;
+.down-arrow {
+  height: 100px;
+  width: 100px;
+}
+
+.bio-heading {
+  color: black;
+  margin: 0 auto;
+}
+
+.lead {
+  color: black;
+}
+
+a {
+  color: #f7f3e3;
+  font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f7f3e3;
+}
+
+span {
+  color: #9b2d2d;
+}
+
+@media screen and (max-width: 500px) {
+  .name {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .text {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-height: 625px) {
-  h1 {
-    font-size: 60px;
-  }
-  .logo {
-    height: 400px;
-    width: 400px;
-  }
-}
-
-@media screen and (max-height: 400px) {
-  h1 {
-    font-size: 40px;
-    margin: -10px;
-  }
-  .logo {
-    height: 300px;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 60px;
+    margin-top: 50px;
   }
   .logo {
     height: 400px;

@@ -15,8 +15,10 @@
     <link rel="shortcut icon" href="images/logo.ico">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
   </head>
@@ -26,14 +28,13 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="container h-50">
-        <a class="navbar-brand" href="#">Pete LaMalfa</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="../resume.pdf"><i class="far fa-file"><p class="description">Résumé</p></i></a>
+              <a class="nav-link" href="resume.pdf"><i class="far fa-file"><p class="description">Résumé</p></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/plamalfa"><i class="fab fa-github"><p class="description">GitHub</p></i></a>
@@ -51,16 +52,109 @@
     </nav>
 
     <!-- Page Content -->
-        <div class="container h-30">
-          <div class="row h-40 justify-content-center">
+        <div class="container-fluid page-1">
+          <div class="row justify-content-center">
             <img src="images/PETEWEBSITELOGO.svg" class="logo">
           </div>
-          <div class="row">
-            <h1>Hi, I'm Pete.</h1>
+          <div class="row title">
+            <h1 class="name">Pete LaMalfa</h1>
           </div>
           <div class="row text">
-            I make&nbsp;<a href="WebDeveloper/index.html" class="cool-link">websites</a>&nbsp;and play&nbsp;<a href="http://www.petelamalfa.com/" class="cool-link">jazz piano</a>
+            Full-Stack Web Developer & Jazz Pianist
           </div>
+          <div class="row animated bounce infinite slower">
+            <a href="#page-2"><img src="./images/down-arrow.png" class="down-arrow"></a>
+          </div>
+        </div>
+        <div class="container-fluid page-2" id="page-2">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <br>
+              <h1 class="bio-heading">I am a <strong>full-stack<br> <span>web developer</span></strong></h1>
+              <br>
+              <p class="lead">who is always enthusiastic about taking on new challenges and finding ways to become a better <span>programmer</span>. As an <span>active freelancer</span>, I work primarily with <span>JavaScript</span>, <span>React</span>, <span>SQL</span>, <span>Express</span>, <span>Node.js</span> and <span>Bootstrap</span>.
+                When I'm not coding, you can find me at the piano, exploring new cuisines and traveling the world.</p>
+            </div>
+          </div>
+          <br>
+          <div class="icon-row row">
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-react-original-wordmark colored"></i>
+              <i class="devicon-ruby-plain-wordmark colored"></i>
+              <i class="devicon-rails-plain-wordmark colored"></i>
+              <i class="devicon-postgresql-plain-wordmark colored row-2"></i>
+              <i class="devicon-nodejs-plain-wordmark colored row-2"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored row-2"></i>
+          </div>
+        </div>
+        <br>
+        <br>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="my-4 title2">My Work</h1>
+              <br>
+              <hr>
+
+              <!-- Project One -->
+              <div class="row">
+                <div class="col-md-7">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="https://i.imgur.com/AvD3kfU.png" alt="">
+                </div>
+                <div class="col-md-5">
+                  <h3>Recordnition</h3>
+                  <p>A camera-based smartphone app that returns album details and suggested retail price of a vinyl record by simply
+                  taking a picture of its cover.</p>
+                  <br>
+                  <p><strong>Technologies Used:</strong> React Native, Expo, Node.js, Express, CSS, Google Vision API, Discogs API</p>
+                  <a class="btn btn-primary" href="https://youtu.be/DWjSsenWm34">View Project</a>
+                </div>
+              </div>
+              <!-- /.row -->
+
+              <hr>
+
+              <!-- Project Two -->
+              <div class="row">
+                <div class="col-md-7">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="https://i.imgur.com/ROMPfxK.png" alt="">
+                </div>
+                <div class="col-md-5">
+                  <h3>IdenTreefier</h3>
+                  <p>A webapp that helps you find and favorite trees in any NYC zipcode.
+                    Enter any valid zipcode within the New York City limits to generate a collection of pins on a map, with each pin representing an individual tree.
+                    Click on a pin to view a tree's breed, latin name, condition, address and more.
+                    Powered by NYC 2015 Tree Census data.
+                  </p>
+                  <br>
+                  <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Node.js, Express, Google Maps API</p>
+                  <a class="btn btn-primary" href="https://identreefier.herokuapp.com/">View Project</a>
+                </div>
+              </div>
+              <!-- /.row -->
+
+              <hr>
+
+              <!-- Project Three -->
+              <div class="row" id=war>
+                <div class="col-md-7">
+                  <img class="img-fluid rounded mb-3 mb-md-0" src="https://i.imgur.com/4ySN7ME.png" alt="">
+                </div>
+                <div class="col-md-5">
+                  <h3>War - the Card Game</h3>
+                  <p>An original version of the classic card game which uses vanilla JavaScript to construct, shuffle and deal a deck of 52 cards.</p>
+                  <a class="btn btn-primary" href="https://war-the-card-game.getforge.io/">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
         </div>
 
         <!-- <div class="container h-100" style="border: 1px blue solid">
@@ -73,7 +167,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   </body>
 
 </html>
