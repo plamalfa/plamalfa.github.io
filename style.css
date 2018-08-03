@@ -23,7 +23,6 @@ i {
 .icon-row {
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
 }
 
 .name {
@@ -99,9 +98,11 @@ span {
 }
 
 @media screen and (max-width: 500px) {
+  .page-2 {
+    height: 100vh;
+  }
   .name {
     font-size: 60px;
-    margin-top: 50px;
   }
   .text {
     font-size: 15px;
